@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main role="main">
+
+        <section class="page__section request mb-125">
+          <div class="container">
+
+            <div class="page__section-header">
+              <p class="page__section-sub-title mb-60">31 октября - 1 ноября 2018<br>«Экспоцентр»</p>
+              <h2 class="page__section-title">ОСТАВИТЬ ЗАЯВКУ НА УЧАСТИЕ В ВЫСТАВКЕ</h2>
+              <p class="page__section-sub-title">Оставьте  заявку и станьте первым, с кем свяжется отдел</p>
+            </div>
+            <form class="form form--request" action="">
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Фамилия Имя Отчество" id="" name="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Название компании" id="" name="">
+                </span>
+              </label>
+              <div class="form__row">
+                <div class="form__col">
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="url" placeholder="Сайт компании" id="" name="">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="email" placeholder="Email" id="" name="">
+                    </span>
+                  </label>
+                </div>
+                <div class="form__col">
+                  <label class="field-select">
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>Товарная категория</option>
+                        <option>Стройматериалы</option>
+                        <option>Столярные изделия</option>
+                        <option>Электротовары</option>
+                        <option>Инструменты</option>
+                        <option>Напольные покрытия</option>
+                        <option>Плитка</option>
+                        <option>Сантехника</option>
+                        <option>Водоснабжение</option>
+                        <option>Сад</option>
+                        <option>Скобяные изделия</option>
+                        <option>Краски</option>
+                        <option>Декор</option>
+                        <option>Освещение</option>
+                        <option>Хранение</option>
+                        <option>Кухни</option>
+                        <option>Другое</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="tel" placeholder="+ 7 xxx xxx xxxx" id="" name="">
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <textarea class="field-text__input" placeholder="Опишите, почему товар именно вашей компании должен принять участие в выставке?"></textarea>
+                </span>
+              </label>
+              <div class="field-actions">
+                <button class="btn btn--main" type="submit">Отправить</button>
+                <div class="field-actions__text">СОГЛАСЕН НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ, ПОЛУЧЕНИЕ РАССЫЛОК, А ТАКЖЕ С ПОЛИТИКОЙ КОНФИДЕНЦИАЛЬНОСТИ.</div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="page__section contacts ">
+          <div class="container">
+            <div class="page__section-header">
+              <h2 class="page__section-title">Место проведения</h2>
+              <p class="page__section-sub-title">Экспоцентр</p>
+            </div>
+          </div>
+          <div class="map"></div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>
