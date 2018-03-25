@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="container">
+          <a href="index.html" class="logo logo--header">
+            <img src="img/lm-logo.svg" alt="logo">
+          </a>
+          <div class="top-contacts">
+            <div class="top-contacts__item">
+              <div class="top-contacts__title">Телефон продаж:</div>
+              <div class="top-contacts__value">8 925 888 88 88</div>
+            </div>
+            <div class="top-contacts__item">
+              <div class="top-contacts__title">E-mail для связи:</div>
+              <div class="top-contacts__value">chance@lm-chance.ru</div>
+            </div>
+          </div>
+          <div class="main-logo">
+            <img src="img/main-logo.png" alt="Ярмарка Шансов">
+          </div>
+        </div>
+      </header>
+      <main role="main">
+        <section class="page__section request mb-125">
+          <div class="container">
+            <div class="page__section-header">
+              <p class="page__section-sub-title mb-60">31 октября - 1 ноября 2018<br>«Экспоцентр»</p>
+              <h2 class="page__section-title">ОСТАВИТЬ ЗАЯВКУ НА УЧАСТИЕ В ВЫСТАВКЕ</h2>
+              <p class="page__section-sub-title">Оставьте  заявку и станьте первым, с кем свяжется отдел</p>
+            </div>
+            <form class="form form--request" action="">
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Фамилия Имя Отчество" id="" name="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Название компании" id="" name="">
+                </span>
+              </label>
+              <div class="form__row">
+                <div class="form__col">
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="url" placeholder="Сайт компании" id="" name="">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="email" placeholder="Email" id="" name="">
+                    </span>
+                  </label>
+                </div>
+                <div class="form__col">
+                  <label class="field-select">
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>Товарная категория</option>
+                        <option>Стройматериалы</option>
+                        <option>Столярные изделия</option>
+                        <option>Электротовары</option>
+                        <option>Инструменты</option>
+                        <option>Напольные покрытия</option>
+                        <option>Плитка</option>
+                        <option>Сантехника</option>
+                        <option>Водоснабжение</option>
+                        <option>Сад</option>
+                        <option>Скобяные изделия</option>
+                        <option>Краски</option>
+                        <option>Декор</option>
+                        <option>Освещение</option>
+                        <option>Хранение</option>
+                        <option>Кухни</option>
+                        <option>Другое</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="tel" placeholder="+ 7 xxx xxx xxxx" id="" name="">
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <textarea class="field-text__input" placeholder="Опишите, почему товар именно вашей компании должен принять участие в выставке?"></textarea>
+                </span>
+              </label>
+              <div class="field-actions">
+                <button class="btn btn--main" type="submit">Отправить</button>
+                <div class="field-actions__text">СОГЛАСЕН НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ, ПОЛУЧЕНИЕ РАССЫЛОК, А ТАКЖЕ С ПОЛИТИКОЙ КОНФИДЕНЦИАЛЬНОСТИ.</div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="page__section contacts ">
+          <div class="container">
+            <div class="page__section-header">
+              <h2 class="page__section-title">Место проведения</h2>
+              <p class="page__section-sub-title">Экспоцентр</p>
+            </div>
+          </div>
+          <div class="map"></div>
+        </section>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="container">
+          <a href="/" class="logo logo--footer">
+            <img src="img/lm-logo.svg" id="toTop" alt="logo">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
