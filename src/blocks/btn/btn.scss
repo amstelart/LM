@@ -90,4 +90,27 @@ $border-radius:               3px !default;
       border-color: $color-main;
     }
   }
+
+  &--offer {
+    border-radius: 36px;
+    background-color: #ffd602;
+    border-color: #ffd602;
+    font-size: 31px;
+    color: #262122;
+    padding: 12px 30px;
+
+    &:hover,
+    &:focus {
+      color: #000;
+      background-color: darken(#ffd602, 4%);
+      border-color: darken(#ffd602, 6%);
+    }
+
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      background-color: $color-main;
+      border-color: $color-main;
+    }
+  }
 }

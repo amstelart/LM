@@ -1,0 +1,16 @@
+// В этом файле должны быть стили для БЭМ-блока video-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.video-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  max-width: 840px;
+  margin: auto;
+
+  .embed-responsive {
+    box-shadow: 0 3px 7px rgba(18, 18, 18, 0.83);
+  }
+
+}

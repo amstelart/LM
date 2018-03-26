@@ -24,6 +24,23 @@ $font-family--bold:           'leroy_merlin_sanssemibold', 'Arial', sans-serif;
   min-width: 320px;
   min-height: 100%;
 
+  body {
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &--main {
+    body {
+      background-image: url(../img/bg-main.jpg);
+    }
+  }
+
+  &--request {
+    body {
+      background-image: url(../img/bg-page.jpg);
+    }
+  }
+
   &__inner {
     min-height: 100vh;
     display: flex;
@@ -35,7 +52,11 @@ $font-family--bold:           'leroy_merlin_sanssemibold', 'Arial', sans-serif;
   }
 
   &__section {
+    margin-bottom: 70px;
 
+    &--contacts {
+      margin-bottom: 0;
+    }
   }
 
   &__section-header {
@@ -44,9 +65,9 @@ $font-family--bold:           'leroy_merlin_sanssemibold', 'Arial', sans-serif;
   }
   &__section-title {
     text-transform: uppercase;
-    line-height: 1;
+    line-height: 1.1;
     font-size: 38px;
-    max-width: 405px;
+    max-width: 490px;
     margin: 0 auto 0 auto;
   }
 
@@ -132,16 +153,22 @@ img {
   @include container;
 }
 
-body {
-  background-image: url(../img/bg.png);
-  background-repeat: no-repeat;
-  background-position: top center;
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .mb-60 {
   margin-bottom: 60px;
 }
 
-.mb-125 {
+.mb-100 {
   margin-bottom: 100px;
+}
+
+.mb-125 {
+  margin-bottom: 125px;
 }

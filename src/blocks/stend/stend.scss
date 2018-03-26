@@ -1,0 +1,44 @@
+// В этом файле должны быть стили для БЭМ-блока stend, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.stend {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include row;
+  align-items: center;
+
+
+  &__item {
+
+    &--area {
+      @include col;
+      @include col(lg, 12);
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    &--stends {
+      @include col;
+      @include col(lg, 4);
+    }
+
+    &--image {
+      @include col;
+      @include col(lg, 8);
+    }
+  }
+
+  &__title {
+    font-size: 77px;
+    line-height: 1.1;
+    font-family: $font-family--semi-bold;
+  }
+
+  &__sub-title {
+    font-size: 35px;
+    line-height: 1.1;
+  }
+
+}

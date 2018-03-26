@@ -47,7 +47,12 @@
     "fields-group": [],
     "tooltip": [],
     "top-contacts": [],
-    "map": []
+    "map": [],
+    "reason-list": [],
+    "video-box": [],
+    "stend": [],
+    "offer": [],
+    "reviews": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
