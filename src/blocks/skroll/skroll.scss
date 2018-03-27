@@ -1,0 +1,15 @@
+// В этом файле должны быть стили для БЭМ-блока skroll, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.skroll {
+
+  $block-name:                &; // #{$block-name}__element
+
+  // width: 78px;
+  // height: 87px;
+  // background-image: url('../img/scroll-icon.png');
+  // background-repeat: no-repeat;
+  // margin: 370px auto 100px auto;
+
+}

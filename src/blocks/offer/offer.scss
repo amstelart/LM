@@ -18,6 +18,11 @@
     max-width: 470px;
     margin: 0 auto 25px auto;
     text-align: center;
+
+    @media (max-width: $screen-sm) {
+      font-size: 24px;
+      padding: 10px 30px;
+    }
   }
 
   &__caption {
@@ -32,12 +37,15 @@
     margin-bottom: 30px;
   }
 
-  &__nav {
-    height: 220px;
-  }
-
   &__action {
     text-align: center;
+
+    @media (max-width: $screen-sm) {
+      .btn--offer {
+        font-size: 14px;
+        padding: 12px 15px;
+      }
+    }
   }
 
 }

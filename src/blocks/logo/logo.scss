@@ -9,6 +9,22 @@
   display: block;
   white-space: nowrap;
 
+  &__caption {
+    color: #262122;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    display: none;
+
+    @media (max-width: $screen-md) {
+      display: block;
+    }
+
+    @media (max-width: $screen-sm) {
+      font-size: 24px;
+    }
+  }
+
   &--header {
     width: 167px;
     height: 84px;

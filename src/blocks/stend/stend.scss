@@ -17,16 +17,29 @@
       @include col(lg, 12);
       text-align: center;
       margin-bottom: 80px;
+
+      @media (max-width: $screen-lg) {
+        margin-bottom: 30px;
+      }
     }
 
     &--stends {
       @include col;
       @include col(lg, 4);
+
+      @media (max-width: $screen-lg) {
+        text-align: center;
+        margin-bottom: 70px;
+      }
     }
 
     &--image {
       @include col;
       @include col(lg, 8);
+
+      @media (max-width: $screen-lg) {
+        text-align: center;
+      }
     }
   }
 
